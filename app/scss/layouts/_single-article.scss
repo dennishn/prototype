@@ -1,0 +1,109 @@
+.single {
+	@include structure-grid-row();
+	.header {
+		@include structure-grid-row();
+		> .content {
+			@include grid-row();
+			> .heading {
+				@include grid-column(12);
+				@media #{$medium-up} {
+					@include grid-column(10, $center: true);
+				}
+			}
+		}
+	}
+	.summary {
+		@include structure-grid-row();
+		> .content {
+			@include grid-row();
+			margin-top: 1.25rem;
+			@media #{$medium-up} {
+				margin-top: 2.5rem;
+			}
+			> .paragraph {
+				@include grid-column(12);
+				@media #{$medium-up} {
+					@include grid-column(10, $center: true);
+				}
+			}
+			> .lead {
+
+			}
+		}
+	}
+	.body {
+		@include structure-grid-row();
+		> .content {
+			@include grid-row();
+			margin-top: 1.25rem;
+			@media #{$medium-up} {
+				margin-top: 2.5rem;
+			}
+			> .paragraph {
+				@include grid-column(12);
+				@media #{$medium-up} {
+					@include grid-column(10, $center: true);
+				}
+			}
+		}
+	}
+	.supplementary {
+		@include structure-grid-row();
+		overflow-y: hidden;
+		overflow-x: auto;
+		> .code {
+			@include grid-row();
+			margin-top: 1.25rem;
+			@media #{$medium-up} {
+				margin-top: 2.5rem;
+			}
+			> pre {
+				@include grid-column(12);
+				@media #{$large-up} {
+					@include grid-column(10);
+				}
+			}
+		}
+		> .wide-image {
+			@include structure-grid-row();
+			margin-top: 1.25rem;
+			margin-bottom: 1.25rem;
+			@media #{$medium-up} {
+				margin-top: 2.5rem;
+				margin-bottom: 2.5rem;
+			}
+			> figure {
+				@include grid-column(12, $collapse: true);
+				figcaption {
+					@include grid-row();
+					> .content {
+						@include grid-column(12);
+						@media #{$medium-up} {
+							@include grid-column(10, $center: true);
+						}
+					}
+				}
+			}
+		}
+		> .gallery {
+			@include structure-grid-row();			
+			margin-top: 1.25rem;
+			@media #{$medium-up} {
+				max-width: none;
+				margin-top: 2.5rem
+			}
+		}
+	}
+	.footer {
+		@include structure-grid-row();
+		> .content {
+			@include grid-row();
+			> .paragraph {
+				@include grid-column(12);
+				@media #{$medium-up} {
+					@include grid-column(10, $center: true);
+				}
+			}
+		}
+	}
+}

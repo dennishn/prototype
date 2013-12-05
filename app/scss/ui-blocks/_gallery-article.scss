@@ -1,0 +1,25 @@
+.article .supplementary > .gallery {
+
+	.section {
+		@include structure-grid-row();
+		float: left;
+		.large {
+			@include grid-column(12);
+			@media #{$medium-up} {
+				@include grid-column(2);
+			}
+			@media #{$large-up} {
+				@include grid-column(4);
+			}
+		}
+		ul[class*="block-grid"] {
+			@include grid-column(12);
+			@media #{$medium-up} {
+				@include grid-column(10);
+			}
+			@media #{$large-up} {
+				@include grid-column(8);
+			}
+		}
+	}
+}
