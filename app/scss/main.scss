@@ -9,18 +9,18 @@
 //Compass Imports
 //
 
+// Override Foundation variables and settings, while keeping the ability to update the core files.
+@import "foundation_variables";
+
+// Foundation Functions / Helpers
+@import "../bower_components/foundation/scss/foundation/functions";
+
 //Nodes Globals
 //Mixins must NEVER be dependant on variables
 //Variables can have their values computed by mixins
 @import
     "mixins",
     "variables";
-
-// Override Foundation variables and settings, while keeping the ability to update the core files.
-@import "foundation_variables";
-
-// Foundation Functions / Helpers
-@import "../bower_components/foundation/scss/foundation/functions";
 
 // Foundation Components
 @import

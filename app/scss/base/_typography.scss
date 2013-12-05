@@ -5,7 +5,7 @@
 \* ------------------------------------------ */
 
 // This is here you wan't to import all your font imports
-
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Raleway:400,500,700);
 
 
 /* ------------------------------------------ *\
@@ -16,11 +16,16 @@
 * In this file you define all your general styling of fonts.
 * All base font sizes are set in variables.
 */
-
 html,body{
+
 }
 
 h1,h2,h3,h4,h5,h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	> em {
+		font-weight: 700;
+	}
 }
 
 h1, .alpha {
@@ -38,6 +43,14 @@ h6, .zeta{
 }
 
 p {
+	font-family: 'Lora', serif;
+	&.lead {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		> em {
+			font-weight: 500;
+		}
+	}
 }
 
 a {
