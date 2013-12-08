@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background:$gray-light-primary;
+}
+ 
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+ 
+::-webkit-scrollbar-thumb {	
+	border: 2px solid $gray-light-primary;
+    background-clip: padding-box;
+    background:$gray-light-tertriary;
+    &:hover {
+		background:darken($gray-light-tertriary, 10%);
+    }
+}

@@ -35,7 +35,7 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-$body-bg: #fff;
+$body-bg: $gray-light-primary;
 $body-font-color: #2f2f2f;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -50,7 +50,7 @@ $body-font-color: #2f2f2f;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: $blue-primary;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -612,17 +612,17 @@ $body-font-color: #2f2f2f;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: darken(#fff, 5%);
+$panel-bg: darken(#fff, 5%);
 // $panel-border-style: solid;
-// $panel-border-size: 1px;
+$panel-border-size: 0px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: 10%;
 // $panel-border-color: darken($panel-bg, $panel-function-factor);
 
 // We use these to set default inner padding and bottom margin
-// $panel-margin-bottom: rem-calc(20);
-// $panel-padding: rem-calc(20);
+$panel-margin-bottom: 0;
+$panel-padding: 0;
 
 // We use these to set default font colors
 // $panel-font-color: #333;
@@ -745,14 +745,14 @@ $body-font-color: #2f2f2f;
 // $side-nav-padding: rem-calc(14 0);
 
 // We use these to control list styles.
-// $side-nav-list-type: none;
+$side-nav-list-type: square;
 // $side-nav-list-position: inside;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
 // $side-nav-link-color-active: lighten(#000, 30%);
-// $side-nav-font-size: rem-calc(14);
+$side-nav-font-size: rem-calc(16);
 // $side-nav-font-weight: normal;
 // $side-nav-font-family: $body-font-family;
 // $side-nav-active-font-family: $side-nav-font-family;
@@ -930,7 +930,7 @@ $body-font-color: #2f2f2f;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $gray-dark-primary;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

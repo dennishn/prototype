@@ -1,0 +1,10 @@
+.toggle-secondary {
+	position:relative;
+	display:block;
+	float:left;
+	width: rem-calc($topbar-height);
+	height: rem-calc($topbar-height);
+	top:0;
+	left:0;
+	z-index:1;
+}

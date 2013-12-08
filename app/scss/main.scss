@@ -6,6 +6,13 @@
 // The all powerfull cross-browser resets
 @import "normalize";
 
+//Nodes Globals
+//Mixins must NEVER be dependant on variables
+//Variables can have their values computed by mixins
+@import
+    "mixins",
+    "variables";
+
 //Compass Imports
 //
 
@@ -14,13 +21,6 @@
 
 // Foundation Functions / Helpers
 @import "../bower_components/foundation/scss/foundation/functions";
-
-//Nodes Globals
-//Mixins must NEVER be dependant on variables
-//Variables can have their values computed by mixins
-@import
-    "mixins",
-    "variables";
 
 // Foundation Components
 @import
@@ -64,13 +64,20 @@
     "utilities/structure-grid",
     "utilities/prototyping",
     //Plugins
+    "plugins/prism.okaida",
     //Base
+    "base/global-settings",
+    "base/scrollbar",
     "base/animations",
     "base/typography",
+    "base/icomoon",
     "base/white-space",
     //Elements
     "elements/logo",
+    "elements/toggle-secondary.button",
     //Modules
+    "modules/article-nav",
+    "modules/side-nav",
     //Components
     //UI-Blocks
     "ui-blocks/gallery-article",
